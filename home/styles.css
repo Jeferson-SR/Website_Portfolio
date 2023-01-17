@@ -1,0 +1,199 @@
+@import "charset: utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Gruppo&family=Oleo+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 850px){
+    nav.navbar{
+        display: flex;
+        flex-direction: column !important;
+        width: 100vw !important; 
+        height: 25vh !important;
+        padding-top: 1em !important;
+        row-gap: 0.2em !important;
+    }
+
+    /* NAVBAR */
+    nav.navbar div.link{
+        color: white;
+        width: 100vw !important;
+    }
+    div.redes_sociais{
+        width: 100vw !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        padding: 0 !important;
+    }
+    div.redes_sociais img{
+        width: 20px !important;
+    }
+    /* MAIN---------------------------------------------------*/
+    main{
+        width: 100vw;
+        height: 110vh !important;
+        display: flex;
+        flex-direction: column !important ;
+        background-color: black;
+        padding-bottom: 1em !important;
+    }
+    /* IMAGEM */
+    div.imgperfil{
+        width: 10em !important;
+        height: 70% !important;
+        display: flex;
+        align-self: center;
+        justify-content: center !important;
+        opacity: 0.6;
+        margin-bottom: 1em;
+    }
+    /* INTRODUCAO */
+    div.introducao{
+        width: 100% !important;
+        height: 2em !important;
+        display: block !important;
+        font-size: 0.5em !important;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1410px){
+    /* NAVBAR */
+    nav.navbar div.link{
+        color: white;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30% !important;
+    }
+    div.redes_sociais{
+        width: 30% !important;
+        height: 90%;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-left: 0em !important;
+        padding-right: 0em !important;
+        overflow: hidden;
+    }
+    div.redes_sociais img{
+        width: 20px !important;
+    }
+    span.anchor{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    /* END NAVBAR */
+}
+
+/* LAYOUT GERAL ---------------------------------------------------------------*/
+
+/* NAVBAR ------------------------------------*/
+nav.navbar{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+/* PAGINAS */
+nav.navbar div.link{
+    color: white;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+}
+nav.navbar div.link a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+/* REDES SOCIAIS */
+nav.navbar div.redes_sociais{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20em;
+    padding-right: 10em;
+}
+nav.navbar div.redes_sociais img{
+    width: 2em;
+}
+span.anchor{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+/* NAV BAR END -----------------------------------------*/
+/* MAIN---------------------------------------------------*/
+main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row-reverse ;
+    background-color: black;
+}
+/* IMAGEM */
+div.imgperfil{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: right;
+    opacity: 0.6;
+}
+/* INTRODUCAO */
+div.introducao{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.introducao h1{
+    font-size: 3em;
+    text-align: center;
+    left: 3em;
+    font-family: "Oleo Script", Impact;
+    color: white;
+}
+div.introducao h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Gruppo", arial;
+    color: white;
+}
+span.name{
+    color: rgba(255, 217, 0, 0.644);
+}
+/* FIM DA MAIN ------------------------------------*/
+/* FOOTER ------------------------------------------*/
+footer{
+    width: 100vw;
+    background-color: rgba(34, 4, 4, 0.651);
+}
+div.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about section p{
+    text-indent: 1.5em;
+    text-align: right;
+    margin: 2em 3em;
+    font-family: "Gruppo", arial;
+    font-size: 1em;
+    color: white;
+}
